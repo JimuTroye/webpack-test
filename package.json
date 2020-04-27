@@ -20,6 +20,7 @@
   "homepage": "https://github.com/JimuTroye/webpack-test#readme",
   "devDependencies": {
     "css-loader": "^3.5.3",
+    "file-loader": "^6.0.0",
     "style-loader": "^1.2.0",
     "url-loader": "^4.1.0",
     "webpack": "^4.43.0",
