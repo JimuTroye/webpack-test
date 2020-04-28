@@ -1,16 +1,13 @@
 import _ from 'lodash';
-import './style.css';
-import cat from './cat.jpg'
+import print from './print';
 
 function component () {
   var element = document.createElement('div');
   element.innerHTML = _.join(['Hello', 'webpack'], ' ');
-  element.classList.add('hello');
-  // element.className = 'hello';
-  var img = new Image();
-  img.src = cat;
-  img.width = 200;
-  element.appendChild(img);
+  var button = document.createElement('button');
+  button.innerHTML = 'click';
+  button.onclick = print;
+  element.appendChild(button);
   return element;
 }
 
